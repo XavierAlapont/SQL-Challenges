@@ -1,0 +1,15 @@
+--PROBLEM 2  
+--------------
+--BASIC FILTERING  
+------------------------- 
+--PROBLEM STATEMENT - 
+-------------------------
+--USING THE HUMANRESOURCES EMPLOYEE TABLE FIND 
+--THE EMPLOYEES THAT WERE BORN ON OR AFTER 1980, HIRED ON OR AFTER 2010
+--WHO TOOK LESS THAN 40 HOURS OF TOTAL VACATION TIME
+
+SELECT *
+FROM HumanResources.Employee
+WHERE BirthDate >= '1-1-1980' 
+  AND HireDate  >= '1-1-2010'
+  AND VacationHours < 40
