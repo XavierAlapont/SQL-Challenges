@@ -1,6 +1,10 @@
 MICROSOFT ADVENTUREWORKS 2022 DATASET
 
-This dataset is a Microsoft Public SQL semi-realistic dataset commonly used to practice writing SQL queries. The Adventure Works [fictious] company represents a bicycle manufacturer that sells bicycles and accessories to global markets. The compressed dataset (.bak) file can be downloaded from the Microsoft website :
+This dataset is a Microsoft Public SQL semi-realistic dataset commonly
+used to practice writing SQL queries. The Adventure Works
+[fictious] company represents a bicycle manufacturer that sells
+bicycles and accessories to global markets. The compressed dataset
+(.bak) file can be downloaded from the Microsoft website :
 
 https://learn.microsoft.com/en-us/sql/samples/
 
