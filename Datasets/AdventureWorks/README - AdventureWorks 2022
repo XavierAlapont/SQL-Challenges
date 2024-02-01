@@ -8,10 +8,25 @@ bicycles and accessories to global markets. The compressed dataset
 
 https://learn.microsoft.com/en-us/sql/samples/
 
-Move the .bak file to your SQL Server backup location. This varies depending on your installation location, instance name and version of SQL Server. For example, the default location for a default instance of MSSQL16.SQLEXPRESS (16.x) is in Windows 11
+Move the .bak file to your SQL Server backup location. This varies
+depending on your installation location, instance name and version of
+SQL Server. For example, the default location for a default instance
+of MSSQL16.SQLEXPRESS (16.x) is in Windows 11
 
 C:\Program Files\Microsoft SQL Server\MSSQL16.SQLEXPRESS\MSSQL\Backup
 
-Open SSMS and connect to your SQL Server instance. Right-click Databases in Object Explorer > Restore Database... to launch the Restore Database wizard. Select Device and then select the ellipses (...) to choose a device. Select Add and then choose the .bak file you recently moved to the backup location. (If you moved your file to this location but you're not able to see it in the wizard, this typically indicates a permissions issue - SQL Server or the user signed into SQL Server doesn't have permission to this file in this folder). Select OK to confirm your database backup selection and close the Select backup devices window. Check the Files tab to confirm the Restore as location and file names match your intended location and file names in the Restore Database wizard. Select OK to restore your database.
+Open SSMS and connect to your SQL Server instance. Right-click
+Databases in Object Explorer > Restore Database... to launch the
+Restore Database wizard. Select Device and then select the ellipses
+(...) to choose a device. Select Add and then choose the .bak file
+you recently moved to the backup location. (If you moved your file to
+this location but you're not able to see it in the wizard, this
+typically indicates a permissions issue - SQL Server or the user
+signed into SQL Server doesn't have permission to this file in this
+folder). Select OK to confirm your database backup selection and
+close the Select backup devices window. Check the Files tab to
+confirm the Restore as location and file names match your intended
+location and file names in the Restore Database wizard. Select OK to
+restore your database.
 
 Tables within the dataset include product, purchasing, work order, and transaction data etc...
