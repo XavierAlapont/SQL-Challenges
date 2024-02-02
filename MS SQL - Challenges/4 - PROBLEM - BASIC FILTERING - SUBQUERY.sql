@@ -16,7 +16,5 @@
 SELECT Name, Color
 FROM Production.Product
 WHERE Color IS NOT NULL
-  AND ProductID NOT IN (
-                         SELECT ProductID
-						 FROM Production.ProductReview
-	                     )
+  AND ProductID NOT IN ( SELECT ProductID
+					     FROM Production.ProductReview )
