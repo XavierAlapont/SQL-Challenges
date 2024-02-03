@@ -1,16 +1,16 @@
---PROBLEM 4   
+-- PROBLEM 4   
 --------------
---BASIC FILTERING WITH SUBQUERY  
+-- BASIC FILTERING WITH SUBQUERY  
 ------------------------- 
---PROBLEM STATEMENT - 
+-- PROBLEM STATEMENT - 
 -------------------------
---USING THE Production Product TABLE FROM THE MS ADVENTUREWORKS2022 DATABASE 
---FIND THE NAME OF ALL THE PRODUCTS WITH A KNOWN COLOR (NOT NULL)
---THAT DO NOT HAVE A REVIEW IN THE Production ProductReview Table
+-- USING THE Production Product TABLE FROM THE MS ADVENTUREWORKS2022 DATABASE 
+-- FIND THE NAME OF ALL THE PRODUCTS WITH A KNOWN COLOR (NOT NULL)
+-- THAT DO NOT HAVE A REVIEW IN THE Production ProductReview Table
 
 -- Tested - Xavier Alapont - MS-SQL-SMS 19.2 (56.2)
 
--- Here we use a simple SELECT sub-query to create a set that 
+-- Comment: Here we use a simple SELECT sub-query to create a set that 
 -- is used to define filter (WHERE with conditional IN) 
 -- the set is the ID (productIDs) for those products that have a customer review
 

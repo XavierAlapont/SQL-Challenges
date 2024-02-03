@@ -4,14 +4,14 @@
 ------------------------- 
 -- PROBLEM STATEMENT - 
 -------------------------
--- USING THE Sales.vSalesPerson TABLE FROM THE MS ADVENTUREWORKS22 DATABASE
+-- USING THE Sales.vSalesPerson TABLE FROM THE MS ADVENTUREWORKS2022 DATABASE
 -- FIND THE LAST NAMES AND NAMES OF THE SALES PEOPLE WITH MORE THAN $200,000 
 -- IN TOTAL SALES AND ORDER THE LIST ACCORDING TO THE SALES QUOTA (IN DESCENDING ORDER) 
 -- AND THEN THE LAST NAME. USE ALIASES OR THE COLUMN POSITIONING ORDER WHEN POSSIBLE.
 
 -- Tested - Xavier Alapont - MS-SQL-SMS 19.2 (56.2)
 
--- The Aliases defined in Select do not work with the WHERE clause
+-- Comment: The Aliases defined in Select do not work with the WHERE clause
 -- because the SQL execution order vs. SQL writing order 
 -- WRITING ORDER  : SELECT -> FROM -> WHERE -> GROUP BY -> HAVING -> ORDER BY
 -- EXECUTION ORDER: FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY
