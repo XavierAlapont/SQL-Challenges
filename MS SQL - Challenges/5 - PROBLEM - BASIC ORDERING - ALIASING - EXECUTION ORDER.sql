@@ -21,8 +21,8 @@
    
 
 SELECT SalesQuota   AS 'Sales Quota',
-	   LastName     AS 'Sales Person Last Name',
-	   FirstName    AS 'Sales Person First Name'
+	LastName     AS 'Sales Person Last Name',
+	FirstName    AS 'Sales Person First Name'
 FROM Sales.vSalesPerson
 WHERE SalesQuota > 200000
 ORDER BY 1 DESC, [Sales Person Last Name] ASC
