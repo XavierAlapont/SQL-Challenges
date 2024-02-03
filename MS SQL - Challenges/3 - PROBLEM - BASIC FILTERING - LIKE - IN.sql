@@ -1,6 +1,6 @@
 -- PROBLEM 3  
 --------------
--- BASIC FILTERING  
+-- BASIC FILTERING - LIKE & IN 
 ------------------------- 
 -- PROBLEM STATEMENT - 
 -------------------------

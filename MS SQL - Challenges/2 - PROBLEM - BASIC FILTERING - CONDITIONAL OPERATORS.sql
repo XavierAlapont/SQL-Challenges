@@ -1,6 +1,6 @@
 -- PROBLEM 2  
 --------------
--- BASIC FILTERING  
+-- BASIC FILTERING - CONDITIONAL OPERATORS 
 ------------------------- 
 -- PROBLEM STATEMENT - 
 -------------------------
