@@ -1,7 +1,8 @@
-MICROSOFT ADVENTUREWORKS 2022 DATASET
+THE MICROSOFT ADVENTUREWORKS 2022 DATASET
+          Xavier Alapont 
 
-This dataset is a Microsoft Public SQL semi-realistic dataset commonly
-used to practice writing SQL queries. The Adventure Works
+The AdventureWorks dataset is a Microsoft Public SQL semi-realistic dataset 
+commonly used to practice writing SQL queries. The Adventure Works
 [fictious] company represents a bicycle manufacturer that sells
 bicycles and accessories to global markets. The compressed dataset
 (.bak) file can be downloaded from the Microsoft website :
@@ -11,7 +12,7 @@ https://learn.microsoft.com/en-us/sql/samples/
 Move the .bak file to your SQL Server backup location. This varies
 depending on your installation location, instance name and version of
 SQL Server. For example, the default location for a default instance
-of MSSQL16.SQLEXPRESS (16.x) is in Windows 11
+of MSSQL16.SQLEXPRESS (16.x) in Windows 11 is:
 
 C:\Program Files\Microsoft SQL Server\MSSQL16.SQLEXPRESS\MSSQL\Backup
 
