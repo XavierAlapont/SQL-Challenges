@@ -1,4 +1,6 @@
 -- PROBLEM 3  
+--
+-- Tested - Xavier Alapont - MS-SQL-SMS 19.2 (56.2)
 --------------
 -- BASIC FILTERING - LIKE & IN 
 ------------------------- 
@@ -9,8 +11,6 @@
 -- DO NOT END WITH LETTERS O to Z, 
 -- HAVE A LETTER S SOMEWHERE IN THE PRODUCT NAME
 -- AND THAT BELONG TO PRODUCT LINE IS S OR T
-
--- Tested - Xavier Alapont - MS-SQL-SMS 19.2 (56.2)
 
 SELECT *
 FROM Production.Product

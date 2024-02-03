@@ -1,4 +1,6 @@
 -- PROBLEM 5 
+--
+-- Tested - Xavier Alapont - MS-SQL-SMS 19.2 (56.2)
 --------------
 -- BASIC ORDERING - EXECUTION ORDER - ALIASES   
 ------------------------- 
@@ -8,8 +10,6 @@
 -- FIND THE LAST NAMES AND NAMES OF THE SALES PEOPLE WITH MORE THAN $200,000 
 -- IN TOTAL SALES AND ORDER THE LIST ACCORDING TO THE SALES QUOTA (IN DESCENDING ORDER) 
 -- AND THEN THE LAST NAME. USE ALIASES OR THE COLUMN POSITIONING ORDER WHEN POSSIBLE.
-
--- Tested - Xavier Alapont - MS-SQL-SMS 19.2 (56.2)
 
 -- Comment: The Aliases defined in Select do not work with the WHERE clause
 -- because the SQL execution order vs. SQL writing order 

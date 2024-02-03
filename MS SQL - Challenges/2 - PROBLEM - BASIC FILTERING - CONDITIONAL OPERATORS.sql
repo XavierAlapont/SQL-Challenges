@@ -1,4 +1,6 @@
 -- PROBLEM 2  
+--
+-- Tested - Xavier Alapont - MS-SQL-SMS 19.2 (56.2)
 --------------
 -- BASIC FILTERING - CONDITIONAL OPERATORS 
 ------------------------- 
@@ -9,8 +11,6 @@
 -- THAT WERE BORN ON OR AFTER 1975 
 -- HIRED BETWEEN January 1st 2005 and December 31st 2012
 -- AND WHO TOOK LESS THAN 40 HOURS OF TOTAL VACATION TIME
-
--- Tested - Xavier Alapont - MS-SQL-SMS 19.2 (56.2)
 
 SELECT *
 FROM HumanResources.Employee

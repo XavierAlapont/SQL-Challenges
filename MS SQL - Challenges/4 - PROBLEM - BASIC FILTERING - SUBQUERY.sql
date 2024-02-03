@@ -1,4 +1,6 @@
--- PROBLEM 4   
+-- PROBLEM 4  
+--
+-- Tested - Xavier Alapont - MS-SQL-SMS 19.2 (56.2)
 --------------
 -- BASIC FILTERING WITH SUBQUERY  
 ------------------------- 
@@ -7,8 +9,6 @@
 -- USING THE Production Product TABLE FROM THE MS ADVENTUREWORKS2022 DATABASE 
 -- FIND THE NAME OF ALL THE PRODUCTS WITH A KNOWN COLOR (NOT NULL)
 -- THAT DO NOT HAVE A REVIEW IN THE Production ProductReview Table
-
--- Tested - Xavier Alapont - MS-SQL-SMS 19.2 (56.2)
 
 -- Comment: Here we use a simple SELECT sub-query to create a set that 
 -- is used to define filter (WHERE with conditional IN) 

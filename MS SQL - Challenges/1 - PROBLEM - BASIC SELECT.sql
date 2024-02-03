@@ -1,6 +1,8 @@
 -- PROBLEM 1  
+--
+-- Tested - Xavier Alapont - MS-SQL-SMS 19.2 (56.2)
 -------------------------
--- BASIC SELECT STATEMENTS 
+-- BASIC SELECT STATEMENT 
 ------------------------- 
 -- PROBLEM STATEMENT 
 -------------------------
@@ -8,8 +10,6 @@
 -- OUTPUT THE TOP 1 % ROWS 
 -- DISPLAYING THE FIRST NAME, MIDDLE NAME AND LAST NAME COLUMNS
 -- AND ORDER ALPHABETICALLY BY LAST NAME AND THEN FIRST NAME 
-
--- Tested - Xavier Alapont - MS-SQL-SMS 19.2 (56.2)
 
 SELECT TOP 1 PERCENT
 	FirstName AS 'First Name', 
