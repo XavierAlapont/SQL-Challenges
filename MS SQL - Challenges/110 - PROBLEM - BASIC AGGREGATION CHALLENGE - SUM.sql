@@ -1,8 +1,8 @@
--- PROBLEM 9  
+-- PROBLEM 10  
 --
 -- Tested - Xavier Alapont - MS-SQL-SMS 19.2 (56.2)
 --------------
--- BASIC AGGREGATE CHALLENGE   
+-- BASIC AGGREGATE CHALLENGE - SUM 
 ------------------------- 
 -- PROBLEM STATEMENT - 
 -------------------------
