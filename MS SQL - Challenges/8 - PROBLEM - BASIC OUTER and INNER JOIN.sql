@@ -1,4 +1,4 @@
--- PROBLEM 7  
+-- PROBLEM 8  
 --
 -- Tested - Xavier Alapont - MS-SQL-SMS 19.2 (56.2)
 --------------
@@ -6,35 +6,21 @@
 ------------------------- 
 -- PROBLEM STATEMENT - 
 -------------------------
--- Using the Sales Order Header, Sales Person and Sales Territory Tables
--- (Sales.SalesOrderHeader, Sales.SalesPerson and Sales.SalesTerritory)
--- Output the First Name and Last Name of the Sales Person, the Sale Territory,
--- the Sale Order Number and the Sale Total Due for each order 
--- from	the Sales.SalesOrderHeader table that has a sales person listed	on the sale. 
--- We also want to view the sales territory that each sales person is associated
--- with regardless of whether or not they have a listed sales territory.	
--- Return only those rows where the territory’s name is “Northeast” and
--- sort the output in the TotalDue column in descending	order
-
-SELECT  P.FirstName,		
-        P.LastName,  
-		T.Name AS TerritoryName, 
-		SOH.SalesOrderNumber, 
-		SOH.TotalDue
-FROM Sales.SalesOrderHeader SOH
-INNER JOIN Sales.SalesPerson SP
-ON SP.BusinessEntityID = SOH.SalesPersonID
+-- Return the Sales Person ID (BusinessEntityID) and Sales of the Year to date (SalesYTD) from
+-- the Sales.SalesPerson Table.	 Join this table to the Sales.SalesTerritory table in such a way	
+-- that every person in Sales.SalesPerson will	be returned regardless of whether or not they are assigned	
+-- to a territory. Also, return the Name column	from Sales.SalesTerritory. Give this column the column	
+-- alias “Territory Name”. Join to the Person.Person table to return the sales person’s first name and last name.
+-- Now, only include those rows where the territory’s name is either “Northeast” or “Central”
+SELECT
+P.FirstName,
+P.LastName,
+SP.BusinessEntityID,
+SP.SalesYTD,
+ST.Name AS [Territory	Name]
+FROM Sales.SalesPerson SP
+LEFT OUTER JOIN Sales.SalesTerritory ST
+ON ST.TerritoryID = SP.TerritoryID
 INNER JOIN Person.Person P
 ON P.BusinessEntityID = SP.BusinessEntityID
-LEFT OUTER JOIN Sales.SalesTerritory T
-ON T.TerritoryID = SP.TerritoryID
-WHERE T.Name = 'Northeast'
-ORDER BY SOH.TotalDue DESC
-
--- Comment: Notice the use of the INNER JOIN between Sales.SalesOrderHeader and Sales.SalesPerson.		
--- This ensures that we only return rows for sales that have a listed sales person.
--- Since there are rows in the Sales.SalesPerson table with a NULL value in	
--- the TerritoryID column, we need to use a LEFT OTUER JOIN from Sales.SalesPerson to 
--- Sales.SalesTerritory in order to complete this request.			
--- (Note : The ONLY difference between the LEFT OUTER JOIN and RIGHT OUTER JOIN is that the 
---  LEFT OUTER JOIN evaluates the table listed first (on the “left”) and then --  the table listed second (on the “right”))		
+WHERE ST.Name IN ('Northeast', 'Central')
