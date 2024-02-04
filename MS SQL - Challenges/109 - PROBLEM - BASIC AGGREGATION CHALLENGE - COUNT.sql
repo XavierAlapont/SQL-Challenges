@@ -7,8 +7,8 @@
 -- PROBLEM STATEMENT - 
 -------------------------
 
--- Join the Production.Product table and the Production.ProductInventory table for	
--- only the	products that appear in both tables. Use the ProductID as the joining column.	
+-- Join the Production.Product table and the Production.ProductInventory table
+-- and show only the products that appear in both tables. Use the ProductID as the joining column.	
 -- Count the number of products in the Join, the number of distinct products and the
 -- number of products with a listed price not zero and cheaper than $10. 
 
