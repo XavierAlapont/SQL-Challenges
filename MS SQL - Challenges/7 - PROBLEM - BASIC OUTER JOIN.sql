@@ -16,12 +16,6 @@
 -- Return only those rows where the territory’s name is “Northeast” and
 -- sort the output in the TotalDue column in descending	order
 
--- Comment: Notice the use of the INNER JOIN between Sales.SalesOrderHeader and Sales.SalesPerson.		
--- This ensures that we only return rows for sales that have a listed sales person.
--- Since there are rows in the Sales.SalesPerson table with a NULL value in	
--- the TerritoryID column, we need to use a LEFT OTUER JOIN from Sales.SalesPerson to 
--- Sales.SalesTerritory in order to complete this request.			
-
 SELECT  P.FirstName,		
         P.LastName,  
 		T.Name AS TerritoryName, 
@@ -36,3 +30,11 @@ LEFT OUTER JOIN Sales.SalesTerritory T
 ON T.TerritoryID = SP.TerritoryID
 WHERE T.Name = 'Northeast'
 ORDER BY SOH.TotalDue DESC
+
+-- Comment: Notice the use of the INNER JOIN between Sales.SalesOrderHeader and Sales.SalesPerson.		
+-- This ensures that we only return rows for sales that have a listed sales person.
+-- Since there are rows in the Sales.SalesPerson table with a NULL value in	
+-- the TerritoryID column, we need to use a LEFT OTUER JOIN from Sales.SalesPerson to 
+-- Sales.SalesTerritory in order to complete this request.			
+-- (Note : The ONLY difference between the LEFT OUTER JOIN and RIGHT OUTER JOIN is that the 
+--  LEFT OUTER JOIN evaluates the table listed first (on the “left”) and then --  the table listed second (on the “right”))		
