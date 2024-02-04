@@ -11,7 +11,8 @@
 -- that every person in Sales.SalesPerson will	be returned regardless of whether or not they are assigned	
 -- to a territory. Also, return the Name column	from Sales.SalesTerritory. Give this column the column	
 -- alias “Territory Name”. Join to the Person.Person table to return the sales person’s first name and last name.
--- Now, only include those rows where the territory’s name is either “Northeast” or “Central”
+-- Now, only include those rows where the territory’s name is either “Northeast” or “Central”
+
 
 SELECT P.FirstName, P.LastName,
        SP.BusinessEntityID,
