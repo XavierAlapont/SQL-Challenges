@@ -19,7 +19,7 @@
 -- Comment: Notice the use of the INNER JOIN between Sales.SalesOrderHeader and Sales.SalesPerson.		
 -- This ensures that we only return rows for sales that have a listed sales person.
 -- Since there are rows in the Sales.SalesPerson table with a NULL value in	
--- the TerritoryID column, we need to use a	LEFT OTUER JOIN	from Sales.SalesPerson to 
+-- the TerritoryID column, we need to use a LEFT OTUER JOIN from Sales.SalesPerson to 
 -- Sales.SalesTerritory in order to complete this request.			
 
 SELECT  P.FirstName, 
