@@ -22,7 +22,7 @@
 -- the TerritoryID column, we need to use a LEFT OTUER JOIN from Sales.SalesPerson to 
 -- Sales.SalesTerritory in order to complete this request.			
 
-SELECT  P.FirstName, 
+SELECT  P.FirstName,		
         P.LastName,  
 		T.Name AS TerritoryName, 
 		SOH.SalesOrderNumber, 
