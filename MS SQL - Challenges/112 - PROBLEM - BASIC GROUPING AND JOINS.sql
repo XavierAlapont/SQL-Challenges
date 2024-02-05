@@ -31,20 +31,3 @@ ON T.TerritoryID = SP.TerritoryID
 WHERE OrderDate BETWEEN '1/1/2013' AND '12/31/2013'
 GROUP BY T.Name, P.FirstName, P.LastName
 ORDER BY 3, 4 DESC
-
-
---SELECT
---ST.Name AS [Territory Name],
---P.FirstName AS [SalesPerson First Name],
---P.LastName AS [SalesPerson Last Name],
---SUM(TotalDue) AS [Total 2006 Sales]
---FROM Sales.SalesOrderHeader SOH
---INNER JOIN Sales.SalesPerson SP
---ON SP.BusinessEntityID = SOH.SalesPersonID
---INNER JOIN Person.Person P
---ON P.BusinessEntityID = SP.BusinessEntityID
---INNER JOIN Sales.SalesTerritory ST
---ON ST.TerritoryID = SOH.TerritoryID
---WHERE OrderDate BETWEEN '1/1/2013' AND '12/31/2013'
---GROUP BY ST.Name, P.FirstName, P.LastName
---ORDER BY 1,2
