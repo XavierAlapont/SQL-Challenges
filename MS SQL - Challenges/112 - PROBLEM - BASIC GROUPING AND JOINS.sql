@@ -9,12 +9,12 @@
 -- Using the Sales Order Header, Sales Person and Sales Territory Tables
 -- (Sales.SalesOrderHeader, Sales.SalesPerson and Sales.SalesTerritory)
 -- Determine the Total Sales by Person in the year 2013 
--- (SUM TotalDue in the SalesOrderHeader Table) and '
+-- (SUM TotalDue in the SalesOrderHeader Table) and
 -- output the First Name and Last Name of the Sales Person 
 -- (from the Person.Person Table) and the Sale Territory Name 
 -- (from the SalesTerritory table). Do not display results with 
 -- NULL values for the territory name or the sales person name column.
--- Sort the output in the Territory Name and Total Saes in descending order
+-- Sort the output in the Territory Name and Total Sales in descending order
 
 
 SELECT  P.FirstName AS [SalesPerson First Name],		
