@@ -6,7 +6,7 @@
 ------------------------- 
 -- PROBLEM STATEMENT - 
 -------------------------
--- For each	product in the Production.Product Table 
+-- For each product in the Production.Product Table 
 -- determine using the Sales.SalesOrderHeader Table 
 -- how many of orders were placed in 2012.		
 -- Only output those products where at least 200 were ordered.
