@@ -14,7 +14,6 @@
 -- that contains both a product ID (Production.Product Table foreign key)
 -- and a SalesOrderID (Sales.SalesOrderHeader Table foreign key)
 
-
 SELECT P.Name AS [Product Name],
        SUM(SOD.OrderQty) AS ProductOrderCount
 FROM Sales.SalesOrderHeader SOH
