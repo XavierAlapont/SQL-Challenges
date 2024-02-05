@@ -12,10 +12,9 @@
 -- return only those sales people who had at least 
 -- $2 million in sales amount and at least 75 completed sales
 
-SELECT
-SOH.SalesPersonID,
-SUM(TotalDue) AS [Total Sales ($) - 2012],
-COUNT(*) AS [Total Sales (#) - 2012]
+SELECT SOH.SalesPersonID,
+       SUM(TotalDue) AS [Total Sales ($) - 2012],
+       COUNT(*) AS [Total Sales (#) - 2012]
 FROM Sales.SalesOrderHeader SOH
 WHERE SOH.SalesPersonID IS NOT NULL
 AND OrderDate BETWEEN '1/1/2012' AND '12/31/2012'
