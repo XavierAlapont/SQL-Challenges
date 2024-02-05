@@ -6,7 +6,6 @@
 ------------------------- 
 -- PROBLEM STATEMENT - 
 -------------------------
-
 -- Using the Sales.SalesOrderHeader table determine	
 -- how many sales occurred in each territory between	
 -- July	1, 2010	and	December 31, 2013 ?		
