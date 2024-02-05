@@ -13,9 +13,8 @@
 -- group the results not by	the	TerritoryID	but	by	
 -- the name of the territory (found in the Sales.SalesTerritory table).
 
-SELECT
-ST.Name AS TerritoryName,
-COUNT(*) AS SalesCount
+SELECT ST.Name AS TerritoryName,
+       COUNT(*) AS SalesCount
 FROM Sales.SalesOrderHeader SOH
 LEFT OUTER JOIN Sales.SalesTerritory ST
 ON ST.TerritoryID = SOH.TerritoryID
